@@ -1,0 +1,119 @@
+.mywork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 80px 10%;
+}
+.mywork-title {
+  position: relative;
+}
+.mywork-title h1 {
+  padding: 0px 30px;
+  font-size: 60px;
+  font-weight: 600;
+}
+.mywork-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.mywork-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.mywork-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crops to fit cell, keeps aspect ratio */
+  object-position: center;
+  border-radius: 10px;
+}
+.mywork-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+
+  /* width: 40vw; */
+  /* grid-column: span 2; */
+}
+.mywork-img:hover,
+.mywork-img:active {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.work-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.name {
+  background: linear-gradient(270deg, #fff 10%, #7bd3e5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.desc {
+  font-size: 18px;
+  line-height: 30px;
+}
+.techs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: start;
+}
+.tech {
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 10px 25px;
+  background: #23b5d3;
+  margin-top: 20px;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+  .mywork {
+    align-items: start;
+    margin: 50px 6%;
+  }
+  .mywork-title h1 {
+    padding: 0;
+    font-size: 40px;
+  }
+  .mywork-title img {
+    width: 100px;
+    right: -40px;
+  }
+  .mywork-container {
+    align-items: center;
+    margin-inline: auto;
+  }
+  .mywork-item {
+    max-width: 100%;
+    grid-template-columns: 1fr; /* stack image & text */
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .mywork-img {
+    width: 70vw;
+    /* image comes 1st in the container */
+    order: 1;
+  }
+  .work-description {
+    /* decsription comes 2nd in the container */
+    order: 2;
+  }
+  .desc {
+    font-size: 16px;
+  }
+  .tech {
+    padding: 5px 20px;
+  }
+}

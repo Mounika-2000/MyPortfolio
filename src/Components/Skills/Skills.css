@@ -1,0 +1,96 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 70px 10%;
+}
+.skills-title {
+  position: relative;
+}
+.skills-title h1 {
+  padding: 0px 30px;
+  font-size: 60px;
+  font-weight: 600;
+}
+.skills-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.skills-format {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 30px;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.skills-format:hover {
+  border: 2px solid #23b5d3;
+  background: linear-gradient(20deg, #000 40%, #20a3be);
+  /* background: linear-gradient(45deg, #20a3be, #000); */
+  transform: scale(1.05);
+}
+.skills-format h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.skills-format h2 {
+  font-size: 30px;
+  font-weight: 800;
+  background: linear-gradient(270deg, #fff 10%, #7bd3e5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skills-format p {
+  color: #d4d4d4;
+  font-size: 16px;
+  line-height: 30px;
+  /* max-width: 300px; */
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+  .skills {
+    align-items: start;
+    gap: 70px;
+    margin: 20px 6%;
+  }
+  .skills-title h1 {
+    padding: 0;
+    font-size: 40px;
+  }
+  .skills-title img {
+    width: 100px;
+    right: -40px;
+  }
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .skills-format {
+    gap: 10px;
+    padding: 20px;
+  }
+  .skills-format h2 {
+    font-size: 20px;
+  }
+  .skills-format p {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 300px;
+  }
+}
