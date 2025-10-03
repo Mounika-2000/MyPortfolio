@@ -1,6 +1,7 @@
 import project1_img from "../assets/omnifood_snapshot.png";
 import project2_img from "../assets/shades_pallete.png";
 import project3_img from "../assets/dharmavaram_whether.png";
+import capturem from "../assets/capturem.png";
 // import project4_img from "../assets/project_4.svg";
 // import project5_img from "../assets/project_5.svg";
 // import project6_img from "../assets/project_6.svg";
@@ -9,12 +10,23 @@ const mywork_data = [
   {
     w_no: 1,
     w_name: "Web design",
+    w_img: capturem,
+    w_link: "https://mern-capturem.onrender.com",
+    w_desc: {
+      name: "Capturem",
+      desc: "Notes Application – Built and deployed a full-stack notes app using MongoDB, Express.js, React, and Node.js with CRUD functionality. Implemented rate limiting with Upstash Redis for security and designed a responsive UI for cross-device use.",
+      technology: ["MERN Stack"],
+    },
+  },
+  {
+    w_no: 1,
+    w_name: "Web design",
     w_img: project1_img,
     w_link: "https://omnifood-mounika.netlify.app/",
     w_desc: {
       name: "Omnifood",
       desc: "A modern, responsive website for a fictional AI-powered meal subscription service. It highlights a clean layout, engaging visuals, and user-friendly sections and sign up.",
-      technology: ["HTML", "CSS"],
+      technology: ["HTML", "CSS", "JavaScript"],
     },
   },
   {
