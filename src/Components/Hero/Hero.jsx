@@ -7,11 +7,11 @@ const Hero = () => {
     <div id="home" className="hero">
       <img src={profile_img} alt="profile-img" />
       <h1>
-        <span>I'm Mounika,</span> frontend develpoer.
+        <span>I'm Mounika,</span> Software develpoer.
       </h1>
       <p>
-        I'm a frontend developer based in Bangalore, creating and designing
-        websites that blend seamlessly with functionality.
+        I'm a Software Developer based in Bangalore, focused on building
+        reliable, efficient, and user-centric applications.
       </p>
       <div className="hero-action">
         <div className="hero-connect">

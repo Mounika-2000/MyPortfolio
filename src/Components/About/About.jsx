@@ -16,16 +16,19 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              I’m a passionate Frontend Developer with a strong focus on
-              creating responsive, accessible, and visually engaging web
-              experiences. I enjoy turning complex problems into simple,
-              intuitive designs using modern technologies like HTML, CSS,
-              JavaScript, and React.
+              Hi! I’m Mounika D S, a passionate Software Developer who enjoys
+              creating smart, efficient, and user-friendly digital solutions. I
+              love exploring different technologies and building projects that
+              combine creativity with functionality. I have experience working
+              with both frontend and backend development, using tools like
+              JavaScript, React, SQL, NoSQL and Node.js. I enjoy learning new
+              concepts, solving problems through code, and continuously
+              improving my skills to build better applications.
             </p>
             <p>
-              My passion for frontend and design are reflected on the projects I
-              have made, which are developed from scratch, into fully functional
-              projects.
+              My goal is to grow as a versatile developer and contribute to
+              meaningful projects that make a positive impact through
+              technology.
             </p>
           </div>
           {/* <div className="about-skills">
